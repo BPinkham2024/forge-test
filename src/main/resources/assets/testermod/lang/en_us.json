@@ -3,5 +3,8 @@
   "item.testermod.invis_iron": "Invisible Iron",
   "item.testermod.reinforced_iron": "Reinforced Iron",
 
+  "block.testermod.reinforced_iron_block": "Reinforced Iron Block",
+  "block.testermod.reinforcing_ore": "Reinforcing Ore",
+
   "creativemodetab.tester_tab": "Tester Items"
 }

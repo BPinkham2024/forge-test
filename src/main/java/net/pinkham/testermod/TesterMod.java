@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.pinkham.testermod.block.ModBlocks;
 import net.pinkham.testermod.item.ModCreativeModeTabs;
 import net.pinkham.testermod.item.ModItems;
 import org.slf4j.Logger;
@@ -27,6 +28,7 @@ public class TesterMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,11 +42,17 @@ public class TesterMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == ModCreativeModeTabs.TESTER_TAB) {
+//            items
             event.accept(ModItems.FAKE_IRON);
             event.accept(ModItems.INVIS_IRON);
             event.accept(ModItems.REINFORCED_IRON);
 
+//              blocks
+            event.accept(ModBlocks.REINFORCED_IRON_BLOCK);
+            event.accept(ModBlocks.REINFORCING_ORE);
         }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
