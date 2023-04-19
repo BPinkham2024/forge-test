@@ -2,6 +2,13 @@ plugins {
     id 'eclipse'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'idea'
+}
+
+idea {
+    module {
+        inheritOutputDirs = true
+    }
 }
 
 version = '0.1-1.19.3'
