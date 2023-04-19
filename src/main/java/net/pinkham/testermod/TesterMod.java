@@ -46,6 +46,7 @@ public class TesterMod {
             event.accept(ModItems.FAKE_IRON);
             event.accept(ModItems.INVIS_IRON);
             event.accept(ModItems.REINFORCED_IRON);
+            event.accept(ModItems.REINFORCER);
 
 //              blocks
             event.accept(ModBlocks.REINFORCED_IRON_BLOCK);

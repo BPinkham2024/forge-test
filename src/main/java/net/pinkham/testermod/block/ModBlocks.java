@@ -28,7 +28,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> REINFORCING_ORE = registerBlock("reinforcing_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), UniformInt.of(2, 4));
+                    .strength(3f).requiresCorrectToolForDrops()), UniformInt.of(2, 4));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, UniformInt of) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
