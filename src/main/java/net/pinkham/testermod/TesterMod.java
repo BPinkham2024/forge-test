@@ -42,6 +42,8 @@ public class TesterMod {
         if(event.getTab() == ModCreativeModeTabs.TESTER_TAB) {
             event.accept(ModItems.FAKE_IRON);
             event.accept(ModItems.INVIS_IRON);
+            event.accept(ModItems.REINFORCED_IRON);
+
         }
     }
 

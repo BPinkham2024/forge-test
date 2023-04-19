@@ -13,6 +13,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> FAKE_IRON = ITEMS.register("fake_iron", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> INVIS_IRON = ITEMS.register("invis_iron", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> REINFORCED_IRON = ITEMS.register("reinforced_iron", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
